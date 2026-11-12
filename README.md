@@ -41,7 +41,7 @@ start-tooltip-above.bat
 ```powershell
 $pwsh = (Get-Command pwsh).Source
 $runKey = 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Run'
-$cmd = '"' + $pwsh + '" -NoProfile -WindowStyle Hidden -ExecutionPolicy Bypass -File "C:\Users\ycwb\Scripts\tooltip-above\tooltip-above.ps1"'
+$cmd = '"' + $pwsh + '" -NoProfile -WindowStyle Hidden -ExecutionPolicy Bypass -File "$env:USERPROFILE\Scripts\tooltip-above\tooltip-above.ps1"'
 New-ItemProperty -Path $runKey -Name 'TooltipAbove' -Value $cmd -PropertyType String -Force
 ```
 
