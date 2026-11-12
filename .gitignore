@@ -1,0 +1,8 @@
+# 运行时产生的文件
+tooltip-above.pid
+tooltip-above.log
+tooltip-above.stop
+
+# 系统
+Thumbs.db
+Desktop.ini
